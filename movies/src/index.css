@@ -1,0 +1,71 @@
+/* Global styles */
+body {
+  background: rgb(79, 7, 121);
+  background: radial-gradient(circle, rgba(79, 7, 121, 1) 0%, rgba(6, 23, 59, 1) 96%);
+  font-family: 'Roboto', sans-serif !important;
+}
+
+/* Specific component styles */
+.MuiCard-root.filter-card {
+  background-color: #000816 !important;
+  color: #ffffff !important;
+}
+
+/* Adjusting input and select elements for light and dark mode */
+body.dark-mode input[type="search"],
+body.dark-mode .MuiTextField-root input,
+body.dark-mode .MuiSelect-root,
+body.dark-mode .MuiOutlinedInput-input {
+  background-color: #3a3a3a !important; /* Dark background in dark mode */
+  color: #ffffff !important; /* White text color for better readability */
+}
+
+body.light-mode input[type="search"],
+body.light-mode .MuiTextField-root input,
+body.light-mode .MuiSelect-root,
+body.light-mode .MuiOutlinedInput-input {
+  background-color: #ffffff !important; /* White background in light mode */
+  color: #000000 !important; /* Black text color for better readability */
+}
+
+/* Placeholder text color adjustments */
+body.dark-mode input[type="search"]::placeholder,
+body.dark-mode .MuiTextField-root input::placeholder {
+  color: #ffffff !important; /* White placeholder text in dark mode */
+}
+
+body.light-mode input[type="search"]::placeholder,
+body.light-mode .MuiTextField-root input::placeholder {
+  color: #000000 !important; /* Black placeholder text in light mode */
+}
+
+/* Adjusting the label for genre and other inputs */
+body.dark-mode .MuiInputLabel-root {
+  color: #ffffff !important; /* White label color in dark mode */
+}
+
+body.light-mode .MuiInputLabel-root {
+  color: #000000 !important; /* Black label color in light mode */
+}
+
+/* Consistent card styles for movies and actors based on theme */
+body.light-mode .MuiCard-root {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-mode .MuiCard-root {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+/* Adjusting the card content background and text color */
+body.light-mode .MuiCardContent-root {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+body.dark-mode .MuiCardContent-root {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+}
